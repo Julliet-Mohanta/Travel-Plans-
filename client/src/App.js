@@ -20,6 +20,9 @@ import VerifyOtp from "./pages/VerifyOtp";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./components/PrivateRoute";
 import { loadUser } from "./redux/actions/authActions";
+import HelpCentre from "./pages/HelpCentre";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 
 function App() {
   useEffect(() => {
@@ -34,6 +37,9 @@ function App() {
           <div className="App">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/help-center" element={<HelpCenter />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-conditions" element={<TermsConditions />} />
               <Route
                 path="/dashboard/*"
                 element={
